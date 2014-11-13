@@ -1,0 +1,8 @@
+/* CSS declarations go here */
+html {
+	background-image: url(/images/background.jpg);
+}
+
+.disclaimer {
+	font-size: .5em;
+}
