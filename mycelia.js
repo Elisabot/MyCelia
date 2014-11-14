@@ -21,3 +21,6 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 }
+
+// Pick random background image 
+

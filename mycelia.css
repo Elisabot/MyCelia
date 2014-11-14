@@ -1,7 +1,7 @@
 /* CSS declarations go here */
-.container-fluid {
+.bg-wrapper {
 	background-color: grey;
-	background: url("images/bg.jpg") no-repeat center center;
+	background: url("images/bg/mushroompic2.jpg") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -10,24 +10,37 @@
 }
 
 .disclaimer {
-	font-size: .5em;
+	font-size: .8em;
 	color: white;
+	position: fixed;
+	bottom: 15px;
 }
 
-#welcome h1 {
+#welcome {
+/*Text Styling*/
+	font-family: 'Lato', sans-serif;
 	color: white;
-	margin: auto;
-	position: absolute;
-	top: 25%;
-	text-align: center;
+/*Text Orientation*/
 	overflow: auto;
-}
-
-#welcome h2 {
-	color: white;
+	text-align: center;
 	margin: auto;
 	position: absolute;
 	top: 20%;
 	text-align: center;
-	overflow: auto;
+/*Block Styling*/
+	background-color:black;
+   z-index:0;
+   opacity:.7;
+   width: 100%;
+   left: 0%;
+   padding: 2px;
 }
+
+#welcome h1 {
+	font-weight: 900;
+}
+
+#welcome h2 {
+   width: 100%;
+}
+
