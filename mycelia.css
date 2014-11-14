@@ -1,8 +1,33 @@
 /* CSS declarations go here */
-html {
-	background-image: url(/images/background.jpg);
+.container-fluid {
+	background-color: grey;
+	background: url("images/bg.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
 }
 
 .disclaimer {
 	font-size: .5em;
+	color: white;
+}
+
+#welcome h1 {
+	color: white;
+	margin: auto;
+	position: absolute;
+	top: 25%;
+	text-align: center;
+	overflow: auto;
+}
+
+#welcome h2 {
+	color: white;
+	margin: auto;
+	position: absolute;
+	top: 20%;
+	text-align: center;
+	overflow: auto;
 }
