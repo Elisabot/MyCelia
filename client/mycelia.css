@@ -1,7 +1,8 @@
 /* CSS declarations go here */
 .bg-wrapper {
 	background-color: grey;
-	background: url("images/bg/mushroompic2.jpg") no-repeat center center;
+	background-repeat: no-repeat;
+	background-position: center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -44,3 +45,7 @@
    width: 100%;
 }
 
+/*Anchor Button Styles */
+p {
+		font-family: 'Lato', sans-serif;
+}
