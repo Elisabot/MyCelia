@@ -1,10 +1,10 @@
-<!-- Questions to id chantrelles or false chantrelles
+<!-- Questions to id chanterelles or false chanterelles
  -->
 <template name="chanFibrous">
 		<h1>Does the stem look fibrous when broken? It may also become juicy or milky when cut.</h1>
 			<p>
-			  <a href="/quest/chantrelle/spore-color" class="btn btn-primary btn-lg">Yes</a>
-			  <a href="" class="btn btn-default btn-lg">No</a>
+			  <a href="/quest/chanterelle/spore-color" class="btn btn-primary btn-lg">Yes</a>
+			  <a href="/quest/milkcap-russula/brittle" class="btn btn-default btn-lg">No</a>
 			</p>
 			<h5>Help, I'm not sure!</h5>
 </template>
@@ -12,7 +12,7 @@
  <template name="chanSporeColor">
 		<h1>Are the spores white, pinkish, yellow or lilac tinged?</h1>
 			<p>
-			  <a href="/quest/chantrelle/gill-color" class="btn btn-primary btn-lg">Yes</a>
+			  <a href="/quest/chanterelle/gill-color" class="btn btn-primary btn-lg">Yes</a>
 			  <a href="/quest/darkspore/gills" class="btn btn-default btn-lg">No</a>
 			</p>
 			<h5>Help, I'm not sure!</h5>
@@ -21,7 +21,7 @@
 <template name="chanGillColor">
 		<h1>Are the mature gills pale or brightly colored?</h1>
 			<p>
-			  <a href="/quest/chantrelle/gills" class="btn btn-primary btn-lg">Yes</a>
+			  <a href="/quest/chanterelle/gills" class="btn btn-primary btn-lg">Yes</a>
 			  <a href="" class="btn btn-default btn-lg">No</a>
 			</p>
 			<h5>Help, I'm not sure!</h5>
@@ -30,16 +30,48 @@
 <template name="chanGills">
 		<h1>Are the gills fairly thick, blunt, and usually forked or connected by cross veins?</h1>
 			<p>
-			  <a href="/quest/chantrelle/possitive-id" class="btn btn-primary btn-lg">Yes</a>
+			  <a href="/quest/chanterelle/possitive-id" class="btn btn-primary btn-lg">Yes</a>
 			  <a href="" class="btn btn-default btn-lg">No</a>
 			</p>
 			<h5>Help, I'm not sure!</h5>
 </template>
 
-<template name="chanPosID">
-		<h1>You have stumbled on a chantrelle or false chantrelle.</h1>
+
+
+<!-- This is the second chanterelle track
+ -->
+ <template name="chanTexture">
+		<h1>Is the cap and stalk jellylike?</h1>
 			<p>
-			  <a href="" class="btn btn-primary btn-lg">View Chantrelles and False Chantrelles</a>
+			  <a href="/quest/other/possitive-id" class="btn btn-primary btn-lg">Yes</a>
+			  <a href="/quest/chanterelle/habitat" class="btn btn-default btn-lg">No</a>
 			</p>
-			<h5>Let's try that again.</h5>
+			<h5>Help, I'm not sure!</h5>
+</template>
+
+<template name="chanHabitat">
+		<h1>Is it growing on the ground?</h1>
+			<p>
+			  <a href="/quest/chanterelle/surface" class="btn btn-primary btn-lg">Yes</a>
+			  <a href="/quest/other/possitive-id" class="btn btn-default btn-lg">No</a>
+			</p>
+			<h5>Help, I'm not sure!</h5>
+</template>
+
+<template name="chanSurface">
+		<h1>Is the underside wrinkled or veined? *In one case the cap is trumpetlike with a smooth underside.</h1>
+			<p>
+			  <a href="/quest/chanterelle/possitive-id" class="btn btn-primary btn-lg">Yes</a>
+			  <a href="/quest/other/possitive-id" class="btn btn-default btn-lg">No</a>
+			</p>
+			<h5>Help, I'm not sure!</h5>
+</template>
+
+
+<template name="chanPosID">
+		<h1>You have stumbled on a chanterelle or false chanterelle.</h1>
+			<p>
+			  <a href="" class="btn btn-primary btn-lg">View Chanterelles and False Chanterelles</a>
+			</p>
+			<a href="/quest/initial" class="btn btn-default btn-lg">Start Over</a>
 </template>
