@@ -3,3 +3,13 @@
 		{{> yield}}
 	</div>
 </template>
+
+<template name="flowchartRoute">
+		<h1>{{prompt}}</h1>
+			<p>
+				{{#each options}}
+					<a href="/quest/{{slug}}" class="btn btn-primary btn-lg">{{text}}</a>
+				{{/each}}
+			</p>
+			<h5 >Help, I'm not sure!</h5>
+</template>

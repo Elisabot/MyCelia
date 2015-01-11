@@ -1,4 +1,4 @@
 Router.route('/quest/:slug', function () {
-  var item = this.params.slug;
-  this.render('ShowItem', {data: item});
+  var item = flowchartRoutes[this.params.slug];
+  this.render('flowchartRoute', {data: item});
 });

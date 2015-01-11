@@ -58,26 +58,43 @@ flowchart = {
 //A yes/no page
 //Amanita Object
 
-flowchartRouts['amanita-gills'].options[1].slug == 'milkcap-russula-gills'
+flowchartRouts['amanita-gills'].options[1].slug // equals 'milkcap-russula-gills'
 
-fakeArray = {
+exampleObject = {
 	0: 'first element',
-	1: 'secod element'
-}
-
-fakeArray[0] == 'first element'
-
-realObject = {
-	prop1: 1,
+	1: 'secod element',
+	prop1: 1
 	prop2: 2
+	'prop3': 3
+	'&^%$#$%^&*': 'wtf'
+	nested: {
+		propx: 2
+		arr: [{
+			lkdf: 'wow'
+		}]
+	}
 }
 
-realObject.prop1 == 1
+exampleObject[0] // equals 'first element'
+exampleObject.prop1 // equals 1
+exampleObject['prop1'] // equals 1
+exampleObject['prop3'] // equals 2
+exampleObject['&^%$#$%^&*'] // equals 'wtf'
 
-realObject['prop1'] == 1
+exampleObject['nested']['propx'] // equals 2
+
+exampleObject.nested.propx // equals 2
+
+exampleObject['nested']['arr'][0]['lkdf'] // equals 'wow'
+
+key1 = 'nested'
+key2 = 'arr'
+
+exampleObject[key1][key2][0]['lkdf'] // equals 'wow'
 
 
-flowchartRouts = {
+
+flowchartRoutes = {
 
 	'initial': {
 		prompt: 'Does this mushroom have:',
