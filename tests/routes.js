@@ -52,25 +52,25 @@ Router.route('/quest/amanita/possitive-id', function () {
 
 // Milk Cap or Russula Track//
 //Q: Is there a veil covering the young gills?
-Router.route('/quest/milkcap-russula/gills', function () {
+Router.route('/quest/russula/gills', function () {
 	this.layout('questLayout');
 	this.render('mcrGills');
 });
 
 //Q: Is there a thin veil that dissapears and does not form a ring on the stalk?
-Router.route('/quest/milkcap-russula/veil', function () {
+Router.route('/quest/russula/veil', function () {
 	this.layout('questLayout');
 	this.render('mcrVeil');
 });
 
 //Q: Does the stalk break like chalk? Maybe it looks juicy or milky when cut?
-Router.route('/quest/milkcap-russula/brittle', function () {
+Router.route('/quest/russula/brittle', function () {
 	this.layout('questLayout');
 	this.render('mcrBrittle');
 });
 
 //A: Sounds like a Milk Cap or Russula.
-Router.route('/quest/milkcap-russula/possitive-id', function () {
+Router.route('/quest/russula/possitive-id', function () {
 	this.layout('questLayout');
 	this.render('mcrPosID');
 });

@@ -8,7 +8,11 @@
 		<h1>{{prompt}}</h1>
 			<p>
 				{{#each options}}
-					<a href="/quest/{{slug}}" class="btn btn-primary btn-lg">{{text}}</a>
+					{{#if link}}
+						<a href="{{link}}" class="btn btn-primary btn-lg">{{text}}</a>
+					{{else}}
+						<a href="/quest/{{slug}}" class="btn btn-primary btn-lg">{{text}}</a>
+					{{/if}}
 				{{/each}}
 			</p>
 			<h5 >Help, I'm not sure!</h5>
