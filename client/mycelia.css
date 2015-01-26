@@ -50,9 +50,13 @@ p {
 		font-family: 'Lato', sans-serif;
 }
 
-.btn {
-	float: center;
-	width: 300px;
+#flowchart {
+}
+
+.btn-primary {
+	background-color: darkgrey;
+	border-color: darkgrey;
+	border-radius: 0px;
 }
 
 h5 {

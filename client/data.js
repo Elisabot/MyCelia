@@ -13,7 +13,7 @@ flowchartRoutes = {
 			slug: 'amanita-gills'
 		},{
 			text: 'Pores',
-			slug: 'boletes-cap'
+			slug: 'bolete-cap'
 		},{
 			text: 'Teeth',
 			slug: 'hydnoid-tooth-like'
@@ -558,21 +558,5 @@ flowchartRoutes = {
 },
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
