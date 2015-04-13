@@ -1,8 +1,7 @@
 flowchart = {
 
 }
-//We have a situation here where we use options to serve the buttons to the client so that they can make a selection, often between yes and no. However this sends them to a location within our own site and not elsewhere. I am unsure the difference with and how to go about making a link that will take the user to a different website.
-
+//Initial question options
 
 flowchartRoutes = {
 
@@ -36,7 +35,7 @@ flowchartRoutes = {
 	// amanitaGills.options[0].text == 'Yes'
 
 	'amanita-veil': {
-		prompt: 'Can you see a volva or scaly rings around the base of  younger instances of your mushroom?',
+		prompt: "Can you see scaly rings or a volva at the mushroom's base? It will be easier to see on younger specimens.",
 		options: [{
 			text: 'Yes',
 			slug: 'amanita-texture'
@@ -47,7 +46,7 @@ flowchartRoutes = {
 	},
 
 	'amanita-texture': {
-		prompt: 'Do any of them have patches or flakes on top?',
+		prompt: 'Do they have any patches or flakes on top?',
 		options: [{
 			text: 'Yes',
 			slug: 'amanita-possitive-id'
@@ -138,6 +137,9 @@ flowchartRoutes = {
 	},{
 		text: 'No',
 		slug: 'agaricus-spore-color'
+	},{
+		text: 'Want to know more about making a spore print?',
+		link: 'http://mushplanet.com/cultivation_manual/making-spore-print.html'
 	}]
 },
 
@@ -149,6 +151,9 @@ flowchartRoutes = {
 	},{
 		text: 'No',
 		slug: 'spore-color'
+	},{
+		text: 'Want to know more about making a spore print?',
+		link: 'http://mushplanet.com/cultivation_manual/making-spore-print.html'
 	}]
 },
 
@@ -180,6 +185,9 @@ flowchartRoutes = {
 	},{
 		text: 'No',
 		slug: 'mystery-possitive-id'
+	},{
+		text: 'Want to know more about making a spore print?',
+		link: 'http://mushplanet.com/cultivation_manual/making-spore-print.html'
 	}]
 },
 
@@ -211,6 +219,9 @@ flowchartRoutes = {
 	},{
 		text: 'No',
 		slug: 'darkspore-gills'
+	},{
+		text: 'Want to know more about making a spore print?',
+		link: 'http://mushplanet.com/cultivation_manual/making-spore-print.html'
 	}]
 },
 
@@ -226,7 +237,7 @@ flowchartRoutes = {
 },
 
 'chanterelle-gills': {
-	prompt: 'Are the gills fairly thick, blunt, and usually forked or connected by cross veins?Are the gills fairly thick, blunt, and usually forked or connected by cross veins?',
+	prompt: 'Are the gills fairly thick, blunt, and strangely forked or connected by cross veins?',
 	options: [{
 		text: 'Yes',
 		slug: 'chanterelle-possitive-id'
@@ -250,6 +261,17 @@ flowchartRoutes = {
 
 'chanterelle-habitat': {
 	prompt: 'Is it growing on the ground?',
+	options: [{
+		text: 'Yes',
+		slug: 'chanterelle-surface'
+	},{
+		text: 'No',
+		slug: 'chanterelle-habitat2'
+	}]
+},
+
+'chanterelle-habitat2': {
+	prompt: 'Is it growing underground or on corn?',
 	options: [{
 		text: 'Yes',
 		slug: 'chanterelle-surface'
@@ -287,6 +309,9 @@ flowchartRoutes = {
 	},{
 		text: 'No',
 		slug: 'mystery-possitive-id'
+	},{
+		text: 'Want to know more about making a spore print?',
+		link: 'http://mushplanet.com/cultivation_manual/making-spore-print.html'
 	}]
 },
 
@@ -298,6 +323,9 @@ flowchartRoutes = {
 	},{
 		text: 'No',
 		slug: 'other-possitive-id'
+	},{
+		text: 'Want to know more about making a spore print?',
+		link: 'http://mushplanet.com/cultivation_manual/making-spore-print.html'
 	}]
 },
 
@@ -329,6 +357,9 @@ flowchartRoutes = {
 	},{
 		text: 'No',
 		slug: 'polypore-cap'
+	},{
+		text: 'Want to know more about making a spore print?',
+		link: 'http://mushplanet.com/cultivation_manual/making-spore-print.html'
 	}]
 },
 
@@ -340,6 +371,9 @@ flowchartRoutes = {
 	},{
 		text: 'No',
 		slug: 'polypore-cap'
+	},{
+		text: 'Want to know more about making a spore print?',
+		link: 'http://mushplanet.com/cultivation_manual/making-spore-print.html'
 	}]
 },
 
@@ -457,7 +491,7 @@ flowchartRoutes = {
 
 //Club and Coral Fungi Track//
 'club-coral-shape': {
-	prompt: 'Is the mushroom differently shaped?<',
+	prompt: 'Is the mushroom differently shaped?',
 	options: [{
 		text: 'Yes',
 		slug: 'club-coral-stalk'
@@ -518,7 +552,7 @@ flowchartRoutes = {
 	}]
 },
 
-//this is where I'm starting to work
+//Puffballs and Earthstars
 'puffball-spore-case': {
 	prompt: 'Does the mushroom have a spore case? *It may or may not have a stalk or rays.',
 	options: [{
@@ -526,34 +560,40 @@ flowchartRoutes = {
 		slug: 'puffball-habitat'
 	},{
 		text: 'No',
-		slug: ''
+		slug: 'chanterelle-habitat2'
 	}]
 },
 
 'puffball-habitat': {
-	prompt: 'Is it growing on either the ground or wood?',
+	prompt: 'Is it growing on wood or the ground?',
 	options: [{
 		text: 'Yes',
 		slug: 'puffball-possitive-id'
 	},{
 		text: 'No',
-		slug: ''
+		slug: 'chanterelle-habitat2'
 	}]
 },
 'puffball-possitive-id': {
-	prompt: 'You may have a puffball or earthstar.',
+	prompt: 'You have described a puffball or an earthstar.',
 	options: [{
-		text: 'View Puffballs and Earthstars',
-		link: ''
+		text: 'View Puffballs',
+		link: 'http://en.wikipedia.org/wiki/Puffball'
+	},{
+		text: 'View Earthstars',
+		link: 'http://en.wikipedia.org/wiki/Geastrum'
 	}]
 },
 
-//Other Mushroom//
+//Unknown Mushroom//
 'other-possitive-id': {
-	prompt: 'That might be some other kind of mushroom.',
+	prompt: "You've got me! I don't know what that mushroom is.",
 	options: [{
-		text: 'Learn More about Mushrooms',
-		link: ''
+		text: 'Start Over',
+		slug: 'initial'
+	},{
+		text: 'Learn More About Identifying Mushrooms',
+		link: 'http://en.wikipedia.org/wiki/Mushroom#Identification'
 	}]
 },
 
