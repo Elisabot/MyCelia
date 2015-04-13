@@ -2,7 +2,7 @@ flowchart = {
 
 }
 //Initial question options
-
+//!!Missing light-spored gilled mushrooms without a ring!!
 flowchartRoutes = {
 
 	'initial': {
@@ -144,7 +144,7 @@ flowchartRoutes = {
 },
 
 'darkspore-spore-color': {
-	prompt: 'Are the spores rusty-orange, brown, or black colored?',
+	prompt: 'Are the spores rusty-orange, brown, cinnamon or black colored?',
 	options: [{
 		text: 'Yes',
 		slug: 'darkspore-gill-color'
@@ -226,24 +226,25 @@ flowchartRoutes = {
 },
 
 'chanterelle-gill-color': {
-	prompt: 'Are the mature gills pale or brightly colored?',
+	prompt: 'Are the mature gills either pale or brightly colored?',
 	options: [{
 		text: 'Yes',
 		slug: 'chanterelle-gills'
 	},{
 		text: 'No',
-		slug: ''
+		slug: 'darkspore-spore-color'
 	}]
 },
 
 'chanterelle-gills': {
-	prompt: 'Are the gills fairly thick, blunt, and strangely forked or connected by cross veins?',
+	prompt: 'Are the gills kind of thick, blunt, and strangely forked or connected by cross veins?',
 	options: [{
 		text: 'Yes',
 		slug: 'chanterelle-possitive-id'
 	},{
 		text: 'No',
-		slug: ''
+		slug: 'other-possitive-id'
+		//swap for light spored without ring//
 	}]
 },
 
@@ -415,7 +416,7 @@ flowchartRoutes = {
 		slug: 'polypore-tubes'
 	},{
 		text: 'No',
-		slug: ''
+		slug: 'polypore-tubes'
 	}]
 },
 
@@ -491,57 +492,35 @@ flowchartRoutes = {
 
 //Club and Coral Fungi Track//
 'club-coral-shape': {
-	prompt: 'Is the mushroom differently shaped?',
-	options: [{
-		text: 'Yes',
-		slug: 'club-coral-stalk'
-	},{
-		text: 'No',
-		slug: ''
-	}]
-},
-
-'club-coral-stalk': {
-	prompt: 'Does it have a stalk?',
-	options: [{
-		text: 'Yes',
-		slug: 'club-coral-sack'
-	},{
-		text: 'No',
-		slug: ''
-	}]
-},
-
-'club-coral-sack': {
-	prompt: 'Is there a sack at the base?',
+	prompt: 'Is the mushroom a weird shape? Maybe it looks like coral.',
 	options: [{
 		text: 'Yes',
 		slug: 'club-coral-upright'
 	},{
 		text: 'No',
-		slug: ''
+		slug: 'puffball-spore-case'
 	}]
 },
 
 'club-coral-upright': {
-	prompt: 'Is the mushroom standing upright and clublike?',
+	prompt: 'Is the mushroom standing upright or branching out like coral does?',
 	options: [{
 		text: 'Yes',
 		slug: 'club-coral-surface'
 	},{
 		text: 'No',
-		slug: ''
+		slug: 'puffball-spore-case'
 	}]
 },
 
 'club-coral-surface': {
-	prompt: 'Is it coral-like(branched) with either a smooth to slightly wrinkled surface?',
+	prompt: 'Does it have a smooth to slightly wrinkled surface? And no cap on top?',
 	options: [{
 		text: 'Yes',
 		slug: 'club-coral-possitive-id'
 	},{
 		text: 'No',
-		slug: ''
+		slug: 'puffball-spore-case'
 	}]
 },
 'club-coral-possitive-id': {
@@ -554,7 +533,7 @@ flowchartRoutes = {
 
 //Puffballs and Earthstars
 'puffball-spore-case': {
-	prompt: 'Does the mushroom have a spore case? *It may or may not have a stalk or rays.',
+	prompt: 'Does the mushroom have a spore case? *It might even have a stalk or rays.',
 	options: [{
 		text: 'Yes',
 		slug: 'puffball-habitat'
