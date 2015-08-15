@@ -1,6 +1,6 @@
 /* CSS declarations go here */
 .bg-wrapper {
-	background-color: grey;
+	background-color: white;
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -37,7 +37,8 @@
    padding: 2px;
 }
 
-#welcome h1 {
+#welcome {
+	color: white;
 	font-weight: 900;
 }
 
@@ -45,25 +46,30 @@
    width: 100%;
 }
 
+/*Question Heading*/
+h1 {
+	color: #333333;
+	font-family: 'roboto', sans-serif;
+}
+
 /*Anchor Button Styles */
 p {
-		font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 #flowchart {
 }
 
 .btn-primary {
-	background-color: darkgrey;
-	border-color: darkgrey;
-	border-radius: 0px;
+	background-color: #003333;
+	border-color: white;
 }
 
-h5 {
-	position: absolute;
-	bottom: 0;
+/*Sart Over Prompt*/
+.restart {
+	padding-top: 73%;
+	font-size: 1.5em;
 }
-
 
 
 
