@@ -461,7 +461,7 @@ flowchartRoutes = {
 
 //Morels or False Morel Track//
 'morel-cap': {
-	prompt: 'Is the cap brainlike, saddle-shaped, thimble-like, or honeycombed with pits and ridges?',
+	prompt: 'Is the cap brain-like, saddle-shaped, thimble-like, or honeycombed with pits and ridges?',
 	options: [{
 		text: 'Yes',
 		slug: 'morel-veil'
@@ -492,7 +492,7 @@ flowchartRoutes = {
 
 //Club and Coral Fungi Track//
 'club-coral-shape': {
-	prompt: 'Is the mushroom a weird shape? Maybe it looks like coral.',
+	prompt: 'Is the mushroom a weird shape? Maybe it looks like coral?',
 	options: [{
 		text: 'Yes',
 		slug: 'club-coral-upright'

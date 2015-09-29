@@ -71,7 +71,7 @@ p {
 #flowchart {
 }
 
-.btn-default {
+.btn-default, .btn-default:active {
 	background-color: #609000;
 	border-color: white;
 	color: white;
