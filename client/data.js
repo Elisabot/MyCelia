@@ -421,7 +421,7 @@ flowchartRoutes = {
 },
 
 'polypore-tubes': {
-	prompt: 'Does the stalk grow off center and are the tubes rather tough?',
+	prompt: 'Is the stalk growing off-center and are the tubes rather tough?',
 	options: [{
 		text: 'Yes',
 		slug: 'polypore-possitive-id'

@@ -1,4 +1,14 @@
 /* CSS declarations go here */
+
+/*color pallet*/
+/*
+Brown #483527
+Big Apple #F00000
+aglet #f0f0d8
+Muted Life #D8D8A8
+Circada #C0C078
+Leprechaun Shoes #609000
+*/
 .bg-wrapper {
 	background-color: white;
 	background-repeat: no-repeat;
@@ -37,7 +47,7 @@
    padding: 2px;
 }
 
-#welcome {
+#welcome h1{
 	color: white;
 	font-weight: 900;
 }
@@ -48,8 +58,9 @@
 
 /*Question Heading*/
 h1 {
-	color: #333333;
-	font-family: 'roboto', sans-serif;
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
 }
 
 /*Anchor Button Styles */
@@ -60,15 +71,23 @@ p {
 #flowchart {
 }
 
-.btn-primary {
-	background-color: #003333;
+.btn-default {
+	background-color: #609000;
 	border-color: white;
+	color: white;
+}
+
+.btn-default:hover {
+	background-color: #D8D8A8;
+	border-color: white;
+	color: #609000;
 }
 
 /*Sart Over Prompt*/
 .restart {
 	padding-top: 73%;
 	font-size: 1.5em;
+	color: red;
 }
 
 
