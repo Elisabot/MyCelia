@@ -6,7 +6,7 @@ flowchart = {
 flowchartRoutes = {
 
 	'initial': {
-		prompt: 'Does the mushroom have:',
+		prompt: 'Look at the under-side of the mushroom. Do you see:',
 		options: [{
 			text: 'Gills',
 			slug: 'amanita-gills'
