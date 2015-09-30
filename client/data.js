@@ -27,7 +27,7 @@ flowchartRoutes = {
 			slug: 'amanita-veil'
 		},{
 			text: 'No',
-			slug: 'milkcap-russula-gills'
+			slug: 'russula-gills'
 		}]
 	},
 
@@ -52,7 +52,7 @@ flowchartRoutes = {
 			slug: 'amanita-possitive-id'
 		},{
 			text: 'No',
-			slug: 'mystery-possitive-id'
+			slug: 'other-possitive-id'
 		}]
 	},
 
@@ -184,7 +184,7 @@ flowchartRoutes = {
 		slug: 'light-spore-possitive-id'
 	},{
 		text: 'No',
-		slug: 'mystery-possitive-id'
+		slug: 'other-possitive-id'
 	},{
 		text: 'Want to know more about making a spore print?',
 		link: 'http://mushplanet.com/cultivation_manual/making-spore-print.html'
@@ -309,7 +309,7 @@ flowchartRoutes = {
 		slug: 'agaricus-gill-color'
 	},{
 		text: 'No',
-		slug: 'mystery-possitive-id'
+		slug: 'other-possitive-id'
 	},{
 		text: 'Want to know more about making a spore print?',
 		link: 'http://mushplanet.com/cultivation_manual/making-spore-print.html'
@@ -485,7 +485,7 @@ flowchartRoutes = {
 'morel-possitive-id': {
 	prompt: 'You are looking at some sort of Morel or False Morel.',
 	options: [{
-		text: 'View Morels and Fals Morels',
+		text: 'View Morels and False Morels',
 		link: 'http://en.wikipedia.org/wiki/Morchella'
 	}]
 },
