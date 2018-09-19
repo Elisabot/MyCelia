@@ -3,8 +3,6 @@ MyCelia
 
 A tool for mushroom identification utilizing meteor framework
 
-Deployed at mycelia.meteor.com: http://mycelia.meteor.com
-
 Contribute
 ----------
 
