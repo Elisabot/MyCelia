@@ -1,0 +1,26 @@
+{
+  "name": "mycelia",
+  "version": "1.0.0",
+  "description": "mushroom identification app",
+  "main": "routes.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.0.0-beta.55"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elisabot/MyCelia.git"
+  },
+  "author": "elisabot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elisabot/MyCelia/issues"
+  },
+  "homepage": "https://github.com/Elisabot/MyCelia#readme"
+}
