@@ -12,7 +12,7 @@ Clone this repository and cd to that directory.
 
 run `$ meteor` 
 
-see the app running in your browser at [http://localhost:3000](http://localhost:3000)
+see the app running at [http://localhost:3000](http://localhost:3000)
 
 Contribute
 ----------
