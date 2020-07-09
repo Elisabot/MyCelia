@@ -1,5 +1,4 @@
-//helpful things
-
+// helpful things
 
 // questionInitialPrompt = 'Does the mushroom have?'
 
@@ -11,9 +10,6 @@
 
 // questionInitialOption3Text = 'Teeth?'
 // questionInitialOption3Link = 'hydnoid/tooth-like'
-
-
-
 
 // questionInitial = {
 // 	prompt: 'Does this mushroom have:',
@@ -31,9 +27,8 @@
 // 	}
 // }
 
-//this is a true statement
+// this is a true statement
 // questionInitial.option1.text == 'Gills?'
-
 
 // questionInitial = {
 // 	prompt: 'Does this mushroom have:',
@@ -49,29 +44,27 @@
 // 	}]
 // }
 
-
-//this is a true statement
+// this is a true statement
 // questionInitial.options[0].text == 'Gills?'
 
-
-//A yes/no page
-//Amanita Object
+// A yes/no page
+// Amanita Object
 
 // flowchartRouts['amanita-gills'].options[1].slug // equals 'milkcap-russula-gills'
 
 exampleObject = {
-	0: 'first element',
-	1: 'secod element',
-	prop1: 1,
-	prop2: 2,
-	'prop3': 3,
-	'&^%$#$%^&*': 'wtf',
-	nested: {
-		propx: 2,
-		arr: [{
-			lkdf: 'wow'
-		}]
-	}
+  0: 'first element',
+  1: 'secod element',
+  prop1: 1,
+  prop2: 2,
+  'prop3': 3,
+  '&^%$#$%^&*': 'wtf',
+  nested: {
+    propx: 2,
+    arr: [{
+      lkdf: 'wow'
+    }]
+  }
 }
 
 exampleObject[0] // equals 'first element'
@@ -90,4 +83,3 @@ key1 = 'nested'
 key2 = 'arr'
 
 exampleObject[key1][key2][0]['lkdf'] // equals 'wow'
-
