@@ -3,8 +3,6 @@ Router.route('/', function () {
 })
 
 Router.route('/quest/:slug', function () {
-	debugger;
-	// flowchartRoutes is not defined
   let options = flowchartRoutes[this.params.slug]
   this.render('flowchartRoute', {data: options})
 })

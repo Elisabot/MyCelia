@@ -1,4 +1,4 @@
-const myDynamicRoute = {
+myDynamicRoute = {
   'my-dynamic-route': {
     text: 'hey there buddy. i love you',
     slug: 'my-dynamic-route'
@@ -6,7 +6,7 @@ const myDynamicRoute = {
 }
 // Initial question options
 // Missing light-spored gilled mushrooms without a ring
-const flowchartRoutes = {
+flowchartRoutes = {
 
   'initial': {
     prompt: 'Look at the under-side of the mushroom. Do you see:',
