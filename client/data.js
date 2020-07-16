@@ -1,11 +1,5 @@
-myDynamicRoute = {
-  'my-dynamic-route': {
-    text: 'hey there buddy. i love you',
-    slug: 'my-dynamic-route'
-  }
-}
 // Initial question options
-// Missing light-spored gilled mushrooms without a ring
+// TODO: Missing light-spored gilled mushrooms without a ring
 flowchartRoutes = {
 
   'initial': {
