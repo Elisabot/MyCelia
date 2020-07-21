@@ -4,14 +4,14 @@ module.exports = {
       // TODO: set host address, username, and authentication method
       host: '157.245.180.79',
       username: 'root',
-      // pem: './path/to/pem'
+      // pem: './path'
       // password: 'server-password'
       // or neither for authenticate from ssh-agent
     }
   },
 
   app: {
-    name: 'app',
+    name: 'myceliapp',
     path: '../',
     type: 'meteor',
     servers: {
@@ -25,7 +25,7 @@ module.exports = {
     env: {
       // TODO: Change to your app's url
       // If you are using ssl, it needs to start with https://
-      ROOT_URL: 'http://myceliapp.net',
+      ROOT_URL: 'http://157.245.180.79',
       MONGO_URL: 'mongodb://mongodb/meteor',
       MONGO_OPLOG_URL: 'mongodb://mongodb/local',
     },
