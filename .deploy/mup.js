@@ -6,13 +6,13 @@ module.exports = {
       username: 'root',
       // pem: './path'
       // password: 'server-password'
-      // or neither for authenticate from ssh-agent
+      // or neither for ssh-agent
     }
   },
 
   app: {
-    name: 'myceliapp',
-    path: '../',
+    name: 'MyCelia',
+    path: '../MyCelia',
     type: 'meteor',
     servers: {
       one: {},
@@ -20,6 +20,9 @@ module.exports = {
 
     buildOptions: {
       serverOnly: true,
+      buildLocation: '/.deploy',
+      server: 'http://157.245.180.79',
+      executable: 'meteor',
     },
 
     env: {
