@@ -9,8 +9,9 @@ Muted Life #D8D8A8
 Circada #C0C078
 Leprechaun Shoes #609000
 */
-.bg-wrapper {
-	background-color: white;
+/*consider renaming to wrapper*/
+.wrapper {
+	background-color: unset;
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -68,15 +69,12 @@ p {
 	font-family: 'Lato', sans-serif;
 }
 
-#flowchart {
-}
-
 .btn-default, .btn-default:active, .btn-default:visited, .btn-default:link  {
 	background-color: #609000;
 	border-color: white;
 	color: white;
 }
-
+/*consider removing this*/
 .btn-default:active, {
 	color: red;
 	background-color: red;
@@ -88,6 +86,7 @@ p {
 	color: #609000;
 }
 
+/*consider removing this, inactive*/
 /*Sart Over Prompt*/
 .restart {
 	padding-top: 73%;
@@ -95,6 +94,10 @@ p {
 	color: red;
 }
 
+.illustration-key {
+	/*this is working but it's not showing*/
+	background-image: url(images/illustrations/gill-export.svg);
+}
 
 
 
