@@ -4,18 +4,18 @@ function randoInt (min, max) {
 }
 
 if (Meteor.isClient) {
-  var bgurls = [
-    '/images/bg/littleyellowmushrooms.jpg',
-    '/images/bg/woodchipmushrooms.jpg',
-    '/images/bg/littleyellowcapsmoss.jpg',
-    '/images/bg/logwhiteoyster.jpg',
-    '/images/bg/littleyellowcaps.jpg'
+  var mushroomImgs = [
+    '/images/mushroom-photos/littleyellowmushrooms.jpg',
+    '/images/mushroom-photos/woodchipmushrooms.jpg',
+    '/images/mushroom-photos/littleyellowcapsmoss.jpg',
+    '/images/mushroom-photos/logwhiteoyster.jpg',
+    '/images/mushroom-photos/littleyellowcaps.jpg'
   ]
 
   // Pick random background image
   Template.home.helpers({
-    bgurl: function () {
-      return bgurls[randoInt(0, bgurls.length)]
+    anyMushroomImg: function () {
+      return mushroomImgs[randoInt(0, mushroomImgs.length)]
     }
   })
 

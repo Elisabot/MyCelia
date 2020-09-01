@@ -10,7 +10,7 @@ Circada #C0C078
 Leprechaun Shoes #609000
 */
 /*consider renaming to wrapper*/
-.bg-wrapper {
+.wrapper {
 	background-color: unset;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -94,6 +94,9 @@ p {
 	color: red;
 }
 
+.illustration-key {
+	background-color: grey;
+}
 
 
 
