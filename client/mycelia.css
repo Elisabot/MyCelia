@@ -95,7 +95,8 @@ p {
 }
 
 .illustration-key {
-	background-color: grey;
+	/*this is working but it's not showing*/
+	background-image: url(images/illustrations/gill-export.svg);
 }
 
 
