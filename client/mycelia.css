@@ -2,10 +2,9 @@
 /*color pallet
 Primary #609000
 lighter #D8D8A8
-Secondary #907800
+Secondary #82630c
 lighter #f2ee97
 */
-
 .wrapper {
 	background-color: unset;
 	background-repeat: no-repeat;
@@ -15,6 +14,10 @@ lighter #f2ee97
 	-o-background-size: cover;
 	background-size: cover;
 	height: 100vh;
+}
+.flowchart-wrapper {
+	padding-left: unset;
+	padding-right: unset;
 }
 
 .disclaimer {
@@ -61,11 +64,20 @@ h1 {
 }
 
 /*Anchor Button Styles */
+.btn-container {
+	display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 p, .btn {
 	font-family: 'Lato', sans-serif;
 }
-.btn, .btn:hover {
+.btn, .btn:hover, .btn:active {
 	color: #EEE;
+	font-weight: 900;
 }
 
 .btn-default, .btn-default:active, .btn-default:visited, .btn-default:link  {
@@ -78,43 +90,24 @@ p, .btn {
 }
 
 .btn-secondary, .btn-secondary:active, .btn-secondary:visited, .btn-secondary:link   {
-	background-color: #907800;
+	background-color: #82630c;
 }
 
 .btn-secondary:hover {
 	background-color: #f2ee97;
-	color: #907800;
+	color: #82630c;
 }
 
-/*Sart Over Prompt*/
-.restart {
-	padding-top: 73%;
+.img-container {
+	display: flex;
+	flex-direction: row;
 }
 
-.illustration-key {
-	/*this is working but it's not showing*/
-	background-image: url(images/illustrations/gill-export.svg);
+.texture {
+	width: 33.33%;
+	max-height: 77vh;
+	border: 2px solid black;
+	border-radius: 14px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
