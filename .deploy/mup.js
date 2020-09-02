@@ -1,7 +1,6 @@
 module.exports = {
   servers: {
     one: {
-      // TODO: set host address, username, and authentication method
       host: '157.245.180.79',
       username: 'root',
       // pem: './path'
@@ -12,7 +11,7 @@ module.exports = {
 
   app: {
     name: 'MyCelia',
-    path: '../MyCelia',
+    path: '../',
     type: 'meteor',
     servers: {
       one: {},
