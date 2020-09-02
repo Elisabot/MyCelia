@@ -13,6 +13,16 @@ flowchartRoutes = {
     }, {
       text: 'Teeth',
       slug: 'hydnoid-tooth-like'
+    }],
+    img: [{
+      url: '../images/illustrations/gill-export.svg',
+      class: 'texture'
+    }, {
+      url: '../images/illustrations/pore-export.svg',
+      class: 'texture'
+    }, {
+      url: '../images/illustrations/tooth-export.svg',
+      class: 'texture'
     }]
   },
 

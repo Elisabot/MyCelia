@@ -1,15 +1,10 @@
-/* CSS declarations go here */
 
-/*color pallet*/
-/*
-Brown #483527
-Big Apple #F00000
-aglet #f0f0d8
-Muted Life #D8D8A8
-Circada #C0C078
-Leprechaun Shoes #609000
+/*color pallet
+Primary #609000
+lighter #D8D8A8
+Secondary #82630c
+lighter #f2ee97
 */
-/*consider renaming to wrapper*/
 .wrapper {
 	background-color: unset;
 	background-repeat: no-repeat;
@@ -19,6 +14,10 @@ Leprechaun Shoes #609000
 	-o-background-size: cover;
 	background-size: cover;
 	height: 100vh;
+}
+.flowchart-wrapper {
+	padding-left: unset;
+	padding-right: unset;
 }
 
 .disclaimer {
@@ -65,59 +64,50 @@ h1 {
 }
 
 /*Anchor Button Styles */
-p {
+.btn-container {
+	display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+p, .btn {
 	font-family: 'Lato', sans-serif;
+}
+.btn, .btn:hover, .btn:active {
+	color: #EEE;
+	font-weight: 900;
 }
 
 .btn-default, .btn-default:active, .btn-default:visited, .btn-default:link  {
 	background-color: #609000;
-	border-color: white;
-	color: white;
-}
-/*consider removing this*/
-.btn-default:active, {
-	color: red;
-	background-color: red;
 }
 
 .btn-default:hover {
 	background-color: #D8D8A8;
-	border-color: white;
 	color: #609000;
 }
 
-/*consider removing this, inactive*/
-/*Sart Over Prompt*/
-.restart {
-	padding-top: 73%;
-	font-size: 1.5em;
-	color: red;
+.btn-secondary, .btn-secondary:active, .btn-secondary:visited, .btn-secondary:link   {
+	background-color: #82630c;
 }
 
-.illustration-key {
-	/*this is working but it's not showing*/
-	background-image: url(images/illustrations/gill-export.svg);
+.btn-secondary:hover {
+	background-color: #f2ee97;
+	color: #82630c;
 }
 
+.img-container {
+	display: flex;
+	flex-direction: row;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.texture {
+	width: 33.33%;
+	max-height: 77vh;
+	border: 2px solid black;
+	border-radius: 14px;
+}
 
 
